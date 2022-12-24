@@ -27,3 +27,17 @@ Response
 ![alt](img/4.png)
 
 ---
+
+```
+/api/BasketItems/6
+```
+allows user to delete any item from cart/basket based on its ID,so i am able to delete some one else cart item
+
+Request:
+
+![alt](img/5.png)
+
+Response:
+![alt](img/6.png)
+
+---
