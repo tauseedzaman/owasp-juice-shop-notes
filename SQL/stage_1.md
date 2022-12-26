@@ -1,0 +1,1 @@
+SELECT * FROM products WHERE category = 'Gifts' AND released = 1 SELECT * FROM products WHERE category = 'Gifts'+OR+1=1--
