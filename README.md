@@ -1,10 +1,13 @@
 # Hacking OWASP Juice Shop
 
 ## Exploring IDOR
+
 I found this endpoint
+
 ```
-/api/users/{id}
+GET /api/users/{id}
 ```
+
 which returns any user details by passing its ID,
 
 Request
@@ -16,8 +19,9 @@ response
 ---
 
 ```
-/api/basket/{id}
+GET /api/basket/{id}
 ```
+
 returns the basket based on given id, i am able to get some one else basket
 
 Request
@@ -29,8 +33,9 @@ Response
 ---
 
 ```
-/api/BasketItems/6
+DELETE /api/BasketItems/6
 ```
+
 allows user to delete any item from cart/basket based on its ID,so i am able to delete some one else cart item
 
 Request:
@@ -39,5 +44,19 @@ Request:
 
 Response:
 ![alt](img/6.png)
+
+---
+
+```
+PUT /api/BasketItems/11
+```
+
+allows me to encrement the product quantity of someone else cart/basket
+
+Request:
+![alt](img/7.png)
+
+Response
+![alt](img/8.png)
 
 ---
